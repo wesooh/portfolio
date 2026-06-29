@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #1a1a1a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav h1 {
+    color: #64f4ac;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #64f4ac;
+}
+
+section {
+    padding: 4rem 10%;
+    min-height: 70vh;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+#hero h2 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #64f4ac;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 2rem;
+    background: #64f4ac;
+    color: #0a0a0a;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(100, 244, 172, 0.5);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    border-left: 4px solid #64f4ac;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card a {
+    color: #64f4ac;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact {
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #64f4ac;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid #64f4ac;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+
+.social-links a:hover {
+    background: #64f4ac;
+    color: #0a0a0a;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #1a1a1a;
+    color: #888;
+}
